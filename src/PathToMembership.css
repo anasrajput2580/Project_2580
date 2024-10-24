@@ -1,0 +1,153 @@
+/* Section styling */
+.path-to-membership {
+    background-color: #f2efeb; /* Light background color */
+    padding: 40px;
+    text-align: center;
+    color: #000000; /* Main font color */
+  }
+  
+  /* Header styling */
+  .membership-header {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Paragraph styling */
+  .membership-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px
+  }
+  
+  /* List styling for benefits */
+  .membership-benefits {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding-left: 130px;
+    padding-right: 60px
+  }
+  
+  /* List items */
+  .membership-benefits li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Check icon next to each item */
+  .check-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    color: #000000;
+  }
+  
+  /* Bold text for specific items */
+  .bold-text {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+ /* Media Queries for responsiveness */
+
+/* For devices with width less than 1024px (laptops and smaller devices) */
+@media (max-width: 1024px) {
+  .path-to-membership {
+    padding: 30px;
+  }
+
+  .membership-header {
+    font-size: 45px; /* Reduce header size for smaller screens */
+  }
+
+  .membership-paragraph {
+    font-size: 22px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .membership-benefits {
+    font-size: 22px;
+    padding-left: 100px;
+    padding-right: 40px;
+  }
+}
+
+/* For devices with width less than 768px (tablets and smaller devices) */
+@media (max-width: 768px) {
+  .path-to-membership {
+    padding: 20px;
+  }
+
+  .membership-header {
+    font-size: 40px; /* Further reduce header size */
+  }
+
+  .membership-paragraph {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .membership-benefits {
+    font-size: 20px;
+    padding-left: 60px; /* Reduce padding */
+    padding-right: 30px;
+  }
+
+  .membership-benefits li {
+    margin-bottom: 15px; /* Reduce margin between list items */
+  }
+
+  .check-icon {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+  }
+}
+
+/* For devices with width less than 480px (mobile phones and smaller devices) */
+@media (max-width: 480px) {
+  .path-to-membership {
+    padding: 15px;
+  }
+
+  .membership-header {
+    font-size: 32px; /* Mobile-friendly header size */
+  }
+
+  .membership-paragraph {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .membership-benefits {
+    font-size: 18px;
+    padding-left: 20px; /* Further reduce padding */
+    padding-right: 20px;
+  }
+
+  .membership-benefits li {
+    margin-bottom: 10px; /* Adjust space for list items */
+  }
+
+  .check-icon {
+    width: 18px; /* Smaller icons for mobile */
+    height: 18px;
+  }
+}
+
+  
+ 

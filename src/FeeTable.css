@@ -1,0 +1,220 @@
+.fee-container {
+   background-color: #1f2122;
+}
+.fee-table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #1f2122; /* Adjust background if necessary */
+}
+
+.fee-table {
+  width: 80%;
+  border-collapse: collapse;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-top: 1px solid #000000;
+  background-color: #ffffff;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+
+}
+
+.label {
+  margin-left: 15px;
+  font-size: 14px;
+
+}
+
+.row:first-of-type {
+ /* border-top: none;*/
+ border-top: 2px solid #000000;
+}
+.fee-item{
+  background-color: #ffffff;
+  padding-right: 100px;
+  align-items: right;
+  flex-direction: column;
+}
+.fee-item img{
+  background-color: #ffffff;
+   width:30%;
+   align-items: left;
+}
+
+.fee-header {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+
+  padding: 20px;
+  color: #f8cf40;
+  border: 2px solid #000;
+  background-color: #1f2122;
+  border-bottom: none;
+  border-left: none;
+
+
+  text-align: center;
+}
+
+.fee-category {
+  background-color: #f8cf40;
+  font-size: 32px;
+  font-weight: bold;
+  height: fit-content;
+  color:#1f2122;
+  border-right: 2px solid #000000;
+}
+
+.advisor {
+  background-color: #d89b77;
+  color:#1f2122;
+  font-size: 32px;
+}
+
+.director {
+  background-color: #b86e3f;
+  color:#1f2122;
+  font-size: 32px;
+}
+
+.vp {
+  background-color: #c3c3c3;
+  color:#1f2122;
+  font-size: 32px;
+}
+
+.leader {
+  background-color: #d1bc47;
+  color:#1f2122;
+  font-size: 32px;
+}
+
+.sub-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  background-color: #d9e1e1; 
+}
+
+tbody td {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #000;
+  background-color: #ffffff;
+}
+
+tbody td:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color:  #ffffff;;
+}
+.empty-header {
+  background-color: #f8cf40;
+  border-right: 2px solid #000000;
+}
+/* Responsive table container */
+.fee-table-container {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .fee-table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .row .icon img {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .label {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .fee-header {
+    font-size: 30px;
+  }
+
+  .fee-category,
+  .advisor,
+  .director,
+  .vp,
+  .leader {
+    font-size: 18px;
+  }
+
+  .sub-header {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  tbody td {
+    font-size: 9px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fee-header {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  .fee-category,
+  .advisor,
+  .director,
+  .vp,
+  .leader {
+    font-size: 14px;
+  }
+
+  .sub-header {
+    font-size: 9px;
+  }
+
+  tbody td {
+    font-size: 8px;
+    padding: 8px;
+  }
+
+  .label {
+    font-size: 10px;
+  }
+
+  .row .icon img {
+    width: 25px;
+    height: 25px;
+  }
+}

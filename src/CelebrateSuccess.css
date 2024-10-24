@@ -1,0 +1,90 @@
+/* Container for the entire Celebrate section */
+.celebrate-section {
+    background-color: #1f2122; /* Dark background */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .celebrate-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  /* Adding the line above the title */
+  .celebrate-title::before {
+    content: '';
+    width: 720px;
+    height: 5px;
+    background-color: #f8cf40;
+    position: absolute;
+    top: -20px;
+    left: -10;
+  }
+  
+  /* Reward cards container */
+  .reward-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual card styling */
+  .card {
+    background-color: #1f2122;
+    border: 2px solid #f8cf40;
+    padding: 25px;
+    width: 25%;
+    min-width: 160px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Title inside card */
+  .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtitle inside card */
+  .card-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* List inside card */
+  .card-list {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #ebf1ec;
+    padding: 25px;
+    width: 25%;
+  }
+  
+  .card-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Adding the checkmark next to list items */
+  .card-list li::before {
+    content: '✔';
+    color: #13ab25;
+    margin-right: 10px;
+    font-size: 18px;
+  }

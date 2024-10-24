@@ -1,0 +1,33 @@
+.statement-section {
+  background-color: #f2efeb;
+  padding: 20px;
+  text-align: center;
+}
+
+.statement-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #000000;
+  margin: 0;
+}
+
+.h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.h2::before {
+  content: '';
+  width: 40%;
+  height: 5px;
+  background-color: #f8cf40;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the line horizontally */
+ 
+}

@@ -1,0 +1,256 @@
+/* Container for the entire Behind the Program section */
+.bprogram-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2efeb;
+    color: #000000;
+    flex-wrap: wrap;
+  }
+  
+  /* Program content container */
+  .bprogram-content {
+    max-width: 600px;
+    margin-right: 40px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .bprogram-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 150px;
+ 
+  }
+  
+  /* Adding the yellow line above the title */
+  .bprogram-title::before {
+    content: '';
+    width: 430px;
+    height: 5px;
+    background-color: #f8cf40;
+    position: absolute;
+    top: -20px;
+    left: -10;
+  }
+  
+  /* Subtitle styling */
+  .bprogram-subtitle {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    margin-bottom: 10px;
+    padding-left: 150px;
+  }
+  
+  /* Quote text */
+  .bprogram-quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 70px;
+    text-align: center;
+  }
+  
+  /* Author text */
+  .bprogram-author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: right;
+     padding-left: 150px;
+  }
+  
+  /* Image container */
+  .bprogram-image {
+    flex-shrink: 0;
+    background-color: #f8cf40;
+    height: screen;
+  }
+  
+  .bprogram-image img {
+    width: 200%;
+    max-width: 500px;
+  }
+  /* Container for the entire Behind the Program section */
+.bprogram-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2efeb;
+  color: #000000;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Program content container */
+.bprogram-content {
+  max-width: 600px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+/* Title styling */
+.bprogram-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 150px;
+  text-align: center;
+}
+
+/* Adding the yellow line above the title */
+.bprogram-title::before {
+  content: '';
+  width: 430px;
+  height: 5px;
+  background-color: #f8cf40;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the line horizontally */
+}
+
+/* Subtitle styling */
+.bprogram-subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 45px;
+  margin-bottom: 10px;
+  padding-left: 150px;
+}
+
+/* Quote text */
+.bprogram-quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-left: 70px;
+  text-align: center;
+}
+
+/* Author text */
+.bprogram-author {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: right;
+  padding-left: 150px;
+}
+
+/* Image container */
+.bprogram-image {
+  flex-shrink: 0;
+  background-color: #f8cf40;
+}
+
+.bprogram-image img {
+  width: 200%;
+  max-width: 500px;
+}
+
+/* Responsive Design using Media Queries */
+
+/* For screens smaller than 1024px (Tablets) */
+@media (max-width: 1024px) {
+  .program-content {
+    max-width: 100%;
+    margin-right: 0;
+    padding: 0 20px;
+  }
+
+  .program-title, .program-subtitle, .program-author, .program-quote {
+    padding-left: 20px;
+    font-size: 35px;
+  }
+
+  .program-title::before {
+    width: 300px;
+    left: 0;
+  }
+
+  .program-quote {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .program-author {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .program-image img {
+    width: 150%;
+    max-width: 400px;
+  }
+}
+
+/* For screens smaller than 768px (Mobile Phones) */
+@media (max-width: 768px) {
+  .program-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .program-content {
+    text-align: left;
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  .program-title, .program-subtitle, .program-author, .program-quote {
+    font-size: 28px;
+    padding-left: 10px;
+  }
+
+  .program-title::before {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .program-quote {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .program-author {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .program-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .program-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* For screens smaller than 480px (Small Mobile Phones) */
+@media (max-width: 480px) {
+  .program-title, .program-subtitle {
+    font-size: 24px;
+  }
+
+  .program-quote {
+    font-size: 14px;
+  }
+
+  .program-author {
+    font-size: 14px;
+  }
+
+  .program-image img {
+    max-width: 100%;
+    width: auto;
+  }
+}

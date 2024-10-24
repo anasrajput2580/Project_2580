@@ -1,0 +1,215 @@
+.benefits-container {
+    background-color: #fcfaf3;
+ }
+ .benefits-table-container {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   background-color: #1f2122; /* Adjust background if necessary */
+ }
+ 
+ .benefits-table {
+   width: 80%;
+   border-collapse: collapse;
+   align-content: center;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .row-benefits {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-top: 1px solid #000000;
+  background-color: #ffffff;
+  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+}
+
+.icon-benefits img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+
+}
+
+.label-benefits {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.row-benefits:first-of-type {
+ /* border-top: none;*/
+ border-top: 2px solid #000000;
+}
+ .benefits-item{
+   background-color: #ffffff;
+ }
+ .benefits-header {
+   font-family: 'Barlow Condensed', sans-serif;
+   text-transform: uppercase;
+   font-size: 32px;
+ 
+   padding: 20px;
+   color: #000000;
+   border: 2px solid #000;
+   background-color: #fcfaf3;
+   border-bottom: none;
+   border-left: none;
+   text-align: center;
+ }
+ 
+ .benefits-category {
+   background-color: #f8cf40;
+   font-size: 32px;
+   font-weight: bold;
+   height: fit-content;
+   color:#1f2122;
+ }
+ 
+ .advisor {
+    background: linear-gradient(to right, #d89b77, #b86e3f);
+   color:#1f2122;
+   font-size: 32px;
+ }
+ 
+ .director {
+    background: linear-gradient(to right, #b86e3f, #b86e3f);
+   color:#1f2122;
+   font-size: 32px;
+ }
+ 
+ .vp {
+    background: linear-gradient(to right, #c3c3c3, #c3c3c3);
+   color:#1f2122;
+   font-size: 32px;
+ }
+ 
+ .leader {
+    background: linear-gradient(to right, #d1bc47, #d1bc47);
+   color:#1f2122;
+   font-size: 32px;
+ }
+ 
+ .benefits-sub-header {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 11px;
+   color: #000;
+   text-align: center;
+   padding: 10px;
+   border-top: 2px solid #000;
+   border-bottom: 2px solid #000;
+   background-color: #d9e1e1; 
+ }
+ .tick-cell {
+    color: green;
+    font-size: 24px;
+  }
+  
+  .dash-cell {
+    color: black;
+    font-size: 24px;
+  }
+ tbody td {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 10px;
+   color: #000;
+   text-align: center;
+   padding: 0px;
+   border: 2px solid #000;
+   background-color: #ffffff;
+ }
+ 
+ tbody td:first-child {
+   text-transform: uppercase;
+   font-weight: bold;
+   background-color:  #ffffff;;
+ }
+ .empty-header {
+   background-color: #f8cf40;
+ }
+ /* Responsive benefits table container */
+.benefits-table-container {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .benefits-table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .row-benefits {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .row-benefits .icon-benefits img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+  }
+
+  .label-benefits {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .benefits-header {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  .benefits-category,
+  .advisor,
+  .director,
+  .vp,
+  .leader {
+    font-size: 18px;
+  }
+
+  .benefits-sub-header {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  tbody td {
+    font-size: 9px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-header {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .benefits-category,
+  .advisor,
+  .director,
+  .vp,
+  .leader {
+    font-size: 14px;
+  }
+
+  .benefits-sub-header {
+    font-size: 9px;
+  }
+
+  tbody td {
+    font-size: 8px;
+    padding: 3px;
+  }
+
+  .label-benefits {
+    font-size: 10px;
+  }
+
+  .row-benefits .icon-benefits img {
+    width: 25px;
+    height: 25px;
+  }
+}

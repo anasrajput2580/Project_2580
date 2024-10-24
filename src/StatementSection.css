@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+.statement-section {
+    background-color: #f2efeb;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .line {
+    width: 50px; /* Adjust the width as per your preference */
+    height: 5px; /* Line thickness */
+    background-color: #f8cf40;
+    margin: 0 auto 10px auto; /* Center the line and add margin */
+  }
+  
+  .statement-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+  }
+  

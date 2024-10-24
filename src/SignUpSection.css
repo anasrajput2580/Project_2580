@@ -1,0 +1,45 @@
+/* Container Styling */
+.sign-up-section {
+    background-color: #1f2122; /* Dark background color */
+    padding: 30px 0;
+    text-align: center;
+    border: 5px solid #000000; /* Black border */
+  }
+  .Layer1 {
+    background-color: #bac4c93d; /* Dark background color */
+    padding: 29px 0;
+    text-align: center;
+    border: 5px solid #000000; /* Black border */
+  }
+  /* Text styling */
+  .sign-up-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #ffffff; /* White text color */
+    margin: 0;
+    opacity: 0.87; /* Transparency */
+  }
+  
+  /* Button styling */
+  .sign-up-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #f8cf40; /* Yellow border color */
+    padding: 10px 30px;
+    border-radius: 50px; /* Oblong shape */
+    margin-left: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .sign-up-button:hover {
+    background-color: #f8cf40; /* Yellow background on hover */
+    color: #1f2122; /* Dark text color on hover */
+  }
+  

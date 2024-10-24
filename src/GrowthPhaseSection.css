@@ -1,0 +1,91 @@
+.growth-phase-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2122; /* Dark background for the section */
+    padding: 40px 0; /* Add padding to the section */
+  }
+  
+  .growth-content {
+    display: flex;
+    max-width: 1200px; /* Limit the width for large screens */
+    width: 100%;
+    align-items: center;
+  }
+  .growth-image {
+    width: 50%; /* Image takes half the space */
+    object-fit: cover;
+     background-color: #ffd700;/* Yellow background for the image section */
+  }
+  
+  .growth-text-content {
+    padding: 20px;
+    color: #ffffff;
+    width: 50%; /* Text content takes half the space */
+  }
+  
+  .growth-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .growth-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    opacity: 0.8; /* Apply transparency effect */
+  }
+  .statement-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+  }
+  
+  .growth-phase-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2122; /* Dark background for the section */
+    padding: 40px 0; /* Add padding to the section */
+  }
+  
+  .growth-content2 {
+    display: flex;
+    max-width: 1200px; /* Limit the width for large screens */
+    width: 100%;
+    align-items: center;
+  }
+  
+  .growth-image2 {
+    width: 50%; /* Image takes half the space */
+    object-fit: cover;
+    background-color: #ffd700; /* Yellow background for the image section */
+  }
+  
+  .growth-text-content2 {
+    padding: 20px;
+    color: #ffffff;
+    width: 50%; /* Text content takes half the space */
+  }
+  
+  .growth-heading2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .growth-paragraph2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    opacity: 0.8; /* Apply transparency effect */
+  }
+  .statement-text2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    margin: 0;
+  }
+  

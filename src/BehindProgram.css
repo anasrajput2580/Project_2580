@@ -1,0 +1,79 @@
+/* Container for the entire Behind the Program section */
+.program-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f2efeb;
+  color: #000000;
+  flex-wrap: wrap;
+}
+
+/* Program content container */
+.program-content {
+  max-width: 600px;
+  margin-left: 40px; /* Add margin to left for spacing */
+  text-align: center;  /* Align text to the left to match screenshot */
+}
+
+/* Title styling */
+.program-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Adding the yellow line above the title */
+.program-title::before {
+  content: '  ';
+  width: 420px; /* Adjusted to match width in screenshot */
+  height: 5px;
+  background-color: #f8cf40;
+  position: absolute;
+  top: -20px;
+  left: -10; /* Adjusted to align properly */
+}
+
+/* Subtitle styling */
+.program-subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px; /* Slightly reduced font size */
+  margin-bottom: 10px;
+}
+
+/* Quote text */
+.program-quote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Author text */
+.program-author {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: right;
+  margin-top: -10px;
+}
+
+/* Image container */
+.program-image {
+  flex-shrink: 0;
+  background-color: #f8cf40;
+  padding: 0;
+  margin-right: 20px; /* Adjusted spacing between image and text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image styling */
+.program-image img {
+  width: 450px; /* Increased size */
+  height: auto;
+  max-width: 100%; /* Ensure it scales properly */
+}

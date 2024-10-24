@@ -1,0 +1,177 @@
+.footer {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  color: #000000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.footer-logo-section {
+  flex: 1;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-menu {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 11px;
+}
+
+.footer-contact {
+  flex: 2;
+  padding-left: 30px; /* Added padding to give space from the vertical line */
+}
+
+.footer-contact h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons svg {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Vertical Divider */
+.vertical-divider {
+  width: 2px;
+  background-color: #f8cf40;
+  height: 150px;
+  margin: 0 20px; /* Adds space around the divider */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  flex: 3;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  padding-top: 10px;
+
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  margin: 0;
+  color: #000000;
+}
+
+.footer-bottom p:last-child {
+  font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+
+/* For devices with width less than 768px (tablets and below) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo-section, 
+  .footer-menu, 
+  .footer-contact {
+    margin-bottom: 20px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  .footer-contact {
+    padding-left: 0; /* Remove padding for smaller screens */
+  }
+
+  .vertical-divider {
+    display: none; /* Hide vertical divider on smaller screens */
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .social-icons svg {
+    margin-right: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 5px;
+  }
+}
+
+/* For devices with width less than 480px (small screens and mobile devices) */
+@media (max-width: 480px) {
+  .footer-logo {
+    width: 120px; /* Reduce the logo size for smaller screens */
+  }
+
+  .footer-column h4 {
+    font-size: 12px; /* Reduce the heading size */
+  }
+
+  .footer-column p {
+    font-size: 10px; /* Adjust the paragraph font size */
+  }
+
+  .footer-contact h4 {
+    font-size: 16px; /* Adjust contact heading size */
+  }
+
+  .footer-contact p {
+    font-size: 11px; /* Adjust contact paragraph size */
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+  }
+
+  .social-icons svg {
+    font-size: 18px; /* Slightly reduce social icon size */
+    margin-right: 10px;
+  }
+}

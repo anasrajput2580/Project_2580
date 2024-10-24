@@ -1,0 +1,77 @@
+.values-section {
+    background-color: #1f2122;
+    color: #f8cf40;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .values-section h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 45px;
+    color: #f8cf40;
+    margin-bottom: 20px;
+  }
+  
+  .values-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .value-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .value-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #1f2122;
+    color: #ffffff;
+    margin: 20px;
+    width: 45%;
+  }
+  
+  .value-card img {
+    width: 150px;
+    margin-right: 20px;
+    border-left: 10px solid #f8cf40;
+    padding-left: 10px;
+  }
+  
+  .value-card-text {
+    text-align: left;
+  }
+  
+  .value-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .value-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #d3d3d3;
+  }
+  
+  @media (max-width: 768px) {
+    .value-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .value-card img {
+      margin-bottom: 20px;
+    }
+  
+    .value-card-text {
+      text-align: center;
+    }
+  }
+  
