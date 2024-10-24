@@ -1,6 +1,5 @@
 import React from 'react';
 import './TieredCommission.css'; // Import the styles
-import { BrowserRouter } from 'react-router-dom';
 
 const TieredCommission = () => {
   return (
