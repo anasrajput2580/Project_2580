@@ -16,7 +16,7 @@ const PartnerWithUs = () => {
         </div>
         {/* Arrow GIF */}
         <div className='handle-gif'>
-        <img className="arrow" src="/img/Membership_Page/arrow.gif" alt="Arrow GIF" />
+        <img className="arrow" src="/img/Membership_Page/arrow.png" alt="Arrow GIF" />
         </div>
         
         {/* Step 2 */}
@@ -30,7 +30,7 @@ const PartnerWithUs = () => {
 
         {/* Arrow GIF */}
         <div className='handle-gif'>
-        <img className="arrow" src="/img/Membership_Page/arrow.gif" alt="Arrow GIF" />
+        <img className="arrow" src="/img/Membership_Page/arrow.png" alt="Arrow" />
         </div>
         {/* Step 3 */}
         <div className="step">
@@ -40,11 +40,9 @@ const PartnerWithUs = () => {
             Earn from every successful partnership.
           </p>
         </div>
-        <button className="message-btn">Message Us</button>
+        <button className="message-btn">Fill Form</button>
       </div>
-      
     </div>
-        
   );
 };
 

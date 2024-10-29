@@ -1,65 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './banner.css';
+import { NavLink } from 'react-router-dom';
 
 const Banner = ({ videoSrc, title, subtitle }) => {
-  // State to track which menu item is active
-  // const [activeMenuItem, setActiveMenuItem] = useState('/'); // Default is home
-
-  // Function to handle menu item click
-  const [activeMenuItem, setActiveMenuItem] = useState(''); // State to track active item
-
-  const handleMenuClick = (menuItem) => {
-    setActiveMenuItem(menuItem);  // Set the active menu item
-  };
-
   return (
     <div className="banner">
       {/* Menu Section */}
       <nav className="navbar">
         <div className="logo">
-          <a href="/" className="home-button" onClick={() => handleMenuClick('/')}>
+          <a href="/" className="home-button">
             <img src="/img/TREASURE_HINT_LOGO.png" alt="Logo" className="logo-img" />
           </a>
         </div>
         <ul className="menu">
           <li>
-            <a
-              href="/program"
-              className={activeMenuItem === '/program' ? 'active' : ''}  // Check if it's the active item
-              onClick={() => handleMenuClick('/program')}
-            >
-              PROGRAM
-            </a>
+            <NavLink to="/program" activeClassName="active-link">PROGRAM</NavLink>
           </li>
           <li>
-            <a
-              href="/benefits"
-              className={activeMenuItem === '/benefits' ? 'active' : ''}
-              onClick={() => handleMenuClick('/benefits')}
-            >
-              BENEFITS
-            </a>
+            <NavLink to="/benefits" activeClassName="active-link">BENEFITS</NavLink>
           </li>
           <li>
-            <a
-              href="/membership"
-              className={activeMenuItem === '/membership' ? 'active' : ''}
-              onClick={() => handleMenuClick('/membership')}
-            >
-              MEMBERSHIP
-            </a>
+            <NavLink to="/membership" activeClassName="active-link">MEMBERSHIP</NavLink>
           </li>
           <li>
-            <a
-              href="/about"
-              className={activeMenuItem === '/about' ? 'active' : ''}
-              onClick={() => handleMenuClick('/about')}
-            >
-              ABOUT US
-            </a>
+            <NavLink to="/about" activeClassName="active-link">ABOUT US</NavLink>
           </li>
         </ul>
-        <a href="#contact" className="contact-button">CONTACT US</a>
+        <NavLink to="/contact-us" className="contact-button">CONTACT US</NavLink>
       </nav>
 
       {/* Video Background */}

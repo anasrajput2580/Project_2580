@@ -82,7 +82,23 @@
   padding-top: 10px;
 
 }
+.footer-bottom a:link {
+  color: #000000;
+  text-decoration: none;
+ 
+ }
+ .footer-bottom a:visited {
+  text-decoration: none;
+}
 
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom a:active {
+  text-decoration: none;
+  color: #000000;
+}
 .footer-bottom p {
   font-size: 11px;
   margin: 0;
@@ -138,7 +154,7 @@
     align-items: center;
     justify-content: center;
   }
-
+ 
   .footer-bottom p {
     margin-bottom: 5px;
   }

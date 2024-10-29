@@ -1,0 +1,230 @@
+
+  /* Overall container for contact section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1f2122;
+    color: #ffffff;
+    gap: 40px;
+  }
+  
+  /* Left Column (Newsletter and Contact Info) */
+  .left-column {
+    width: 38%;
+
+  }
+  
+  /* Newsletter Section */
+  .newsletter-section {
+    background-color: #f5f3f5;
+    padding: 20px;
+    border-radius: 20px;
+    color: #000;
+    margin-right: -10px;
+    margin-left: 60px;
+  }
+  .newsletter-section h2 {
+    font-family: "Montserrat";
+    font-size: 20;
+    font-weight: bold;
+
+  }
+  .newsletter-form {
+    margin-top: 10px;
+  }
+  .newsletter-bg {
+    background-color: #737373;
+    width: 350px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: -2px;
+    border-radius: 12px;
+    border-color: none;
+  }
+  .newsletter-form input {
+    padding: 8px;
+    width: 90%;
+    border-radius: 12px;
+    border: 1px solid;
+    align-items: center;
+    background-color: #d9e1e1;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    background-color: #f8cf40;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 30%;
+    margin-top:10px;
+    margin-left:255px;
+  }
+  
+  /* Contact Info Section */
+  .contact-info-section {
+    margin-top: -20px;
+    padding: 20px;
+    color: #fff;
+    margin-left: 50px;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links i {
+    margin-right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff; /* Make sure the icons are white or another visible color */
+  }
+  
+  
+  /* Right Column (Form) */
+  .right-column {
+    width: 45%;
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 15px;
+    margin-right: 100px;
+  }
+  
+  .contact-form h2 {
+    color: #000;
+    font-family: "Barlow Condensed";
+    font-size: 20px;
+
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #000;
+    font-family: "Barlow Condensed";
+    font-size: 15px;
+  }
+  .contact-form select{
+    width: 103.5%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #737373;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #737373;
+  }
+  ::placeholder {
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .checkbox {
+   display: flex;
+    /*align-items: center;*/
+    margin-bottom: 15px; 
+  }
+  .checkbox input {
+    margin-left: 1px;
+    width: 45px;
+    height: 37px;
+    background-color: #737373;
+  }
+  .checkbox label {
+    font-family: "Montserrat";
+    font-size: 10px;
+  }
+  
+  .submit-btn {
+    background-color: #f8cf40;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #000;
+    border: 30px;
+    border-radius:  30px;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 450px;
+  }
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+  .contact-container {
+      gap: 20px;
+      padding: 15px;
+  }
+
+  .left-column, .right-column {
+      width: 100%;
+  }
+
+  .newsletter-form button {
+      width: 50%;
+      margin-left: 0;
+  }
+
+  .submit-btn {
+      width: 30%;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .left-column, .right-column {
+      width: 90%;
+      margin: 0;
+  }
+
+  .newsletter-section, .contact-info-section {
+      margin-left: 0;
+  }
+
+  .newsletter-form button {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .submit-btn {
+      width: 100%;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-bg, .newsletter-form input {
+      width: 100%;
+  }
+
+  .form-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .newsletter-form button, .submit-btn {
+      width: 100%;
+  }
+}

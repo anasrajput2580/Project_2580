@@ -1,4 +1,6 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Banner from './banner';
@@ -25,6 +27,11 @@ import StorySection from './StorySection';
 import OurPurpose from './OurPurpose';
 import PartnerWithUs from './PartnerWithUs';
 import ValuesSection from './ValuesSection';
+import StayUpdated from './StayUpdated';
+import ContactUs from './ContactUs';
+import LegalNotice from './LegalNotice';
+import PrivacyPolicy from './PrivacyPolicy';
+import SecondBanner from './SecondBanner';
 function HomePage() {
   return (
     <>
@@ -124,6 +131,41 @@ function AboutPage() {
       <StorySection/>
       <OurPurpose/>
       <ValuesSection/>
+      <StayUpdated/>
+    <Footer/>
+    </>
+        );
+}
+function ContactUsPage() {
+  return (
+    <>
+     <SecondBanner 
+       imgSrc="./img/Contact_Us_Page/Contact_Us.png"
+       title="Let's Create Opportunities Together!" 
+       subtitle="Connect with Us to Explore How We Can Support Your Success" />
+    <ContactUs/> 
+    </>
+        );
+}
+function LegalNoticePage() {
+  return (
+    <>
+     <SecondBanner 
+       imgSrc="./img/Legal_Notice/banner.png"
+       title="Connect, Discover, Earn" 
+       subtitle="Help Businesses Save & Earn Commissions with Every Referral" />
+       <LegalNotice/>
+    <Footer/>
+    </>
+        );
+}
+function PrivacyPolicyPage() {
+  return (
+    <>
+     <SecondBanner 
+       imgSrc="./img/Privacy_Policy/banner.png"
+       title="Privacy Policy of Treasure Hint" />
+       <PrivacyPolicy/>
     <Footer/>
     </>
         );
@@ -137,6 +179,9 @@ function App() {
         <Route path="/benefits" element={<BenefitsPage/>}/>
         <Route path="/membership" element={<MembershipPage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/contact-us" element={<ContactUsPage/>}/>
+        <Route path="/legal-notice" element={<LegalNoticePage/>}/>
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage/>}/>
       </Routes>
     </Router>
   );

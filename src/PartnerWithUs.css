@@ -2,7 +2,9 @@
     background-color: #1f2122;
     color: #ffffff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 10px 20px; 
+    padding-top: 10px;
+    padding-bottom: 60px;
   }
   
   .partner-section h2 {
@@ -21,16 +23,13 @@
   }
   .step {
     width: 250px;
-    margin: 20px;
+    margin: 20px; 
     text-align: center;
-    
-
   }
   
   .step img {
-    width: 100px;
-    margin-bottom: 20px;
-    background-color:azure;
+    width: 160px;
+    margin-bottom: -20px;
   }
   
   .step-title {
@@ -62,15 +61,19 @@
     transition: background-color 0.3s, color 0.3s;
     margin-left: 70px;
     margin-right: auto;
+    width: 180px;
   }
-  
-  
+.arrow {
+  width: 200px;
+  margin-bottom: -20px;
+}
+  /*
   .arrow {
     width: 100px;
     margin: 0 20px;
  
   }
-
+*/
   .handle-gif {
     margin-top: 22px;
     margin-bottom: auto;

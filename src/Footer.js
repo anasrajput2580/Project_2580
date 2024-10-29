@@ -60,13 +60,13 @@ const Footer = () => {
         </div>
       </div>
               {/* Footer Bottom */}
-              <div className="footer-bottom">
-        <p>Terms and Conditions</p>
-        <p>Legal Notice</p>
-        <p>Privacy Policy</p>
+        <div className="footer-bottom">
+        <p><a href="https://drive.google.com/file/d/10Wu9u58Yv6i0Kryy0XM2ibSQ0unwnhFo/view">Terms and Conditions</a></p>
+        <p><a href="/legal-notice">Legal Notice</a></p>
+        <p><a href="/privacy-policy">Privacy Policy</a></p>
         <p>&copy; 2024 Treasure Hint</p>
       </div>
-  
+
     </footer>
   );
 };
