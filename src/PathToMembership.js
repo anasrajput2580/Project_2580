@@ -17,7 +17,7 @@ const PathToMembership = () => {
         </li>
         <li>
           <img src={checkIcon} alt="check" className="check-icon" />
-          Hit the top level and drive home a -  <span className="bold-text"> LUXURY CAR</span>.
+          <span>Hit the top level and drive home a <strong>LUXURY CAR</strong></span>
         </li>
         <li>
           <img src={checkIcon} alt="check" className="check-icon" />
