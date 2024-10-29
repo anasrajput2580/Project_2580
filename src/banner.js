@@ -1,18 +1,24 @@
 import React from 'react';
 import './banner.css';
 import { NavLink } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 const Banner = ({ videoSrc, title, subtitle }) => {
+  // Media Queries
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1025 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <div className="banner">
       {/* Menu Section */}
-      <nav className="navbar">
+      <nav className={`navbar ${isMobile ? 'navbar-mobile' : ''}`}>
         <div className="logo">
           <a href="/" className="home-button">
             <img src="/img/TREASURE_HINT_LOGO.png" alt="Logo" className="logo-img" />
           </a>
         </div>
-        <ul className="menu">
+        <ul className={`menu ${isMobile ? 'menu-mobile' : isTablet ? 'menu-tablet' : ''}`}>
           <li>
             <NavLink to="/program" activeClassName="active-link">PROGRAM</NavLink>
           </li>
@@ -37,8 +43,12 @@ const Banner = ({ videoSrc, title, subtitle }) => {
 
       {/* Header Section */}
       <div className="banner-header">
-        <h1 className="banner-title">{title}</h1>
-        <p className="banner-subtitle">{subtitle}</p>
+        <h1 className={`banner-title ${isMobile ? 'title-mobile' : isTablet ? 'title-tablet' : ''}`}>
+          {title}
+        </h1>
+        <p className={`banner-subtitle ${isMobile ? 'subtitle-mobile' : isTablet ? 'subtitle-tablet' : ''}`}>
+          {subtitle}
+        </p>
       </div>
     </div>
   );
