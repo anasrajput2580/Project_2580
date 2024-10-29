@@ -56,7 +56,7 @@ const OurMembersResources = () => {
           />
           <div className={`resource-text ${animate ? 'animate-up' : ''}`}>
             <h3>PERFORMANCE BONUSES</h3>
-            <p>Incentives for top-performing ​affiliates..</p>
+            <p>Incentives for top-performing ​affiliates.</p>
           </div>
         </div>
 
