@@ -1,7 +1,13 @@
 import React from 'react';
 import './TreasureHintSection.css'; 
+import { useMediaQuery } from 'react-responsive';
 
 const TreasureHintSection = () => {
+  // Define breakpoints for responsiveness
+  const isLargeScreen = useMediaQuery({ query: '(min-width: 1024px)' });
+  const isTablet = useMediaQuery({ query: '(min-width: 768px) and (max-width: 1023px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+
   return (
     <div className="treasure-hint-section">
       <h1 className="header1">OUR 4 TREASURE HINT PROGRAMS</h1>
@@ -9,7 +15,7 @@ const TreasureHintSection = () => {
         Each role offers an additional path to earn money and help businesses save more
       </p>
 
-      <div className="roles-container">
+      <div className={`roles-container ${isMobile ? 'roles-container-mobile' : isTablet ? 'roles-container-tablet' : ''}`}>
         <div className="role-card">
           <div className="role-image-container">
             <img src="/img/Home_Page/deal_finder.png" alt="Deal Finder" className="role-image" />
