@@ -2,13 +2,13 @@
   background-color: #ffffff;
   padding: 20px 40px;
   color: #000000;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 20px;
 }
 
 .footer-logo-section {
@@ -16,78 +16,90 @@
 }
 
 .footer-logo {
-  width: 150px;
+  width: 220px;
+  margin-top: -20px;
+  margin-left: -30px;
 }
 
 .footer-menu {
   display: flex;
   flex: 3;
-  justify-content: space-between;
-}
+  justify-content: space-around;
+  margin-top: -10px;
 
-.footer-column {
-  flex: 1;
 }
 
 .footer-column h4 {
   font-weight: bold;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  color: #000000;
 }
 
 .footer-column p {
-  font-size: 11px;
+  font-size: 12px;
+  color: #000000;
+}
+.footer-column a {
+  color: #000000;
+  text-decoration: none;
 }
 
+.footer-column a:hover {
+  text-decoration: underline;
+}
 .footer-contact {
   flex: 2;
-  padding-left: 30px; /* Added padding to give space from the vertical line */
+  padding-left: 30px;
+  margin-top: -20px;
+  margin-right: -40px;
+
+
 }
 
 .footer-contact h4 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
+  color: #000000;
 }
 
 .footer-contact p {
-  font-size: 13px;
+  font-size: 12px;
   margin: 5px 0;
 }
 
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons svg {
-  margin-right: 15px;
-  font-size: 20px;
-  color: #000000;
-}
-
-/* Vertical Divider */
 .vertical-divider {
-  width: 2px;
+  width: 4px;
   background-color: #f8cf40;
   height: 150px;
-  margin: 0 20px; /* Adds space around the divider */
+  /* margin: 0 20px; */
+  margin-left: 80px;
 }
 
-/* Footer Bottom */
+.social-links2 {
+  margin-top: 10px;
+}
+
+.social-links2 i {
+  margin-right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000000; /* Make sure the icons are white or another visible color */
+}
+
 .footer-bottom {
   display: flex;
-  flex: 3;
-  justify-content: space-evenly;
-  margin-top: 10px;
-  padding-top: 10px;
-
+  justify-content: left;
+  gap: 40px;
+  margin-top: -40px;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 185px;
 }
-.footer-bottom a:link {
+
+.footer-bottom a {
   color: #000000;
-  text-decoration: none;
- 
- }
- .footer-bottom a:visited {
   text-decoration: none;
 }
 
@@ -95,23 +107,22 @@
   text-decoration: underline;
 }
 
-.footer-bottom a:active {
-  text-decoration: none;
-  color: #000000;
-}
-.footer-bottom p {
-  font-size: 11px;
-  margin: 0;
-  color: #000000;
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .footer-container {
+    justify-content: center;
+  }
+  .footer-logo {
+    margin: 0 auto;
+  }
+  .footer-contact {
+    padding-left: 0;
+  }
+  .vertical-divider {
+    display: none;
+  }
 }
 
-.footer-bottom p:last-child {
-  font-weight: bold;
-}
-
-/* Media Queries for responsiveness */
-
-/* For devices with width less than 768px (tablets and below) */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -119,75 +130,39 @@
     text-align: center;
   }
 
-  .footer-logo-section, 
-  .footer-menu, 
-  .footer-contact {
-    margin-bottom: 20px;
-  }
-
   .footer-menu {
     flex-direction: column;
   }
 
-  .footer-column {
-    margin-bottom: 20px;
-  }
-
-  .footer-contact {
-    padding-left: 0; /* Remove padding for smaller screens */
-  }
-
-  .vertical-divider {
-    display: none; /* Hide vertical divider on smaller screens */
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .social-icons svg {
-    margin-right: 10px;
-  }
-
   .footer-bottom {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
   }
- 
-  .footer-bottom p {
-    margin-bottom: 5px;
-  }
+
 }
 
-/* For devices with width less than 480px (small screens and mobile devices) */
 @media (max-width: 480px) {
-  .footer-logo {
-    width: 120px; /* Reduce the logo size for smaller screens */
+  .footer {
+    padding: 15px 20px;
   }
-
+  
+  .footer-contact h4,
   .footer-column h4 {
-    font-size: 12px; /* Reduce the heading size */
+    font-size: 16px;
   }
-
-  .footer-column p {
-    font-size: 10px; /* Adjust the paragraph font size */
-  }
-
-  .footer-contact h4 {
-    font-size: 16px; /* Adjust contact heading size */
-  }
-
-  .footer-contact p {
-    font-size: 11px; /* Adjust contact paragraph size */
-  }
-
-  .footer-bottom p {
+  
+  .footer-contact p,
+  .footer-column p,
+  .footer-bottom {
     font-size: 10px;
   }
+  .footer-bottom{
+    margin-bottom: 40px;
+  }
 
-  .social-icons svg {
-    font-size: 18px; /* Slightly reduce social icon size */
+  .social-links2 i {
+    font-size: 20px;
     margin-right: 10px;
   }
 }

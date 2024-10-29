@@ -34,7 +34,7 @@ const ContactUs = () => {
 
     {/* Contact Info Section */}
     <div className="contact-info-section">
-    <p><i className="fas fa-clock"></i> <strong>Monday - Friday</strong><br />8:00 a.m. - 8:00 p.m. EST</p>
+    <p><i className="fas fa-clock"></i> <strong>Monday - Friday</strong><br />&emsp;8:00 a.m. - 8:00 p.m. EST</p>
     <p><i className="fas fa-map-marker-alt"></i> New York, NY</p>
     <p><i className="fas fa-phone-alt"></i> +1 (886) 677-HINT</p>
       <div className="social-links">
