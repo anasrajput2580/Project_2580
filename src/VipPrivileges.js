@@ -7,7 +7,7 @@ const VipPrivileges = () => {
       <div className="vip-images-container">
         <img
           src="/img/Benefits_Page/vip1.png"
-          alt="Image 1"
+          alt="benefits VIP 1"
           className="vip-image-left"
         />
         <div className="vip-text-container">
@@ -18,14 +18,14 @@ const VipPrivileges = () => {
         </div>
         <img
           src="/img/Benefits_Page/vip3.png"
-          alt="Image 2"
+          alt="benefits VIP 2"
           className="vip-image-right"
         />
       </div>
       <div className="vip-bottom-image-container">
         <img
           src="/img/Benefits_Page/vip2.png"
-          alt="Image 3"
+          alt="benefits VIP 3"
           className="vip-image-bottom"
         />
       </div>

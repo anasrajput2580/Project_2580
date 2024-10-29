@@ -1,10 +1,8 @@
 import React from 'react';
 import './SecondBanner.css';
 import { NavLink } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 const SecondBanner= ({ imgSrc, title, subtitle }) => {
-  const navigate = useNavigate();
 
   return (
     <div>
