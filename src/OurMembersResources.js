@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './OurMembersResources.css';
-
 const OurMembersResources = () => {
   const [animate, setAnimate] = useState(false);
 

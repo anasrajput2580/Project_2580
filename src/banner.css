@@ -61,7 +61,13 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-
+/* Style for the active menu item */
+.menu li a.active {
+  color: #f8cf40;  /* Yellow color for the active menu item */
+}
+.menu li a:hover {
+color: #f8cf40;
+}
 .contact-button {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;

@@ -1,68 +1,136 @@
-/* Container styling */
+/* Container styling */ 
 .resources-container {
-    background-color: #1f2122;
-    padding: 50px 0;
-    text-align: center;
-  }
-  
+  background-color: #1f2122;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.resources-heading {
+  color: #f8cf40;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Section containing both resource cards */
+.resources-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.resource-card {
+  background-color: #fff;
+  border: 10px solid #f8cf40;
+  padding: 20px;
+  width: 450px;
+  position: relative;
+  border-bottom: none;
+  border-right: none;
+}
+
+.resource-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Text that will animate upwards */
+.resource-text {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  padding-top: 20px;
+}
+
+.resource-text h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.resource-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #000;
+  opacity: 0.8;
+}
+
+/* Animation when scrolling into view */
+.animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive styling */
+
+/* For tablets and smaller devices */
+@media (max-width: 1024px) {
   .resources-heading {
-    color: #f8cf40;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 36px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-  }
-  
-  /* Section containing both resource cards */
-  .resources-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding-bottom: 60px;
+    font-size: 32px;
   }
   
   .resource-card {
-    background-color: #fff;
-    border: 10px solid #f8cf40;
-    padding: 20px;
-    width: 450px;
-    position: relative;
-    border-bottom: none;
-    border-right: none;
-  }
-  
-  .resource-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  /* Text that will animate upwards */
-  .resource-text {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    padding-top: 20px;
+    width: 350px;
   }
   
   .resource-text h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    color: #000;
+    font-size: 22px;
   }
-  
+
   .resource-text p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    color: #000;
-    opacity: 0.8;
+    font-size: 16px;
+  }
+}
+
+/* For mobile phones and smaller devices */
+@media (max-width: 768px) {
+  .resources-section {
+    flex-direction: column;
+    gap: 20px;
   }
   
-  /* Animation when scrolling into view */
-  .animate-up {
-    opacity: 1;
-    transform: translateY(0);
+  .resources-heading {
+    font-size: 28px;
   }
-  
+
+  .resource-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .resource-image {
+    height: 180px;
+  }
+
+  .resource-text h3 {
+    font-size: 20px;
+  }
+
+  .resource-text p {
+    font-size: 15px;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .resources-heading {
+    font-size: 24px;
+  }
+
+  .resource-image {
+    height: 150px;
+  }
+
+  .resource-text h3 {
+    font-size: 18px;
+  }
+
+  .resource-text p {
+    font-size: 14px;
+  }
+}

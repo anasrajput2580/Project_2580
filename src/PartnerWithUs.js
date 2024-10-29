@@ -1,6 +1,6 @@
 import React from 'react';
 import './PartnerWithUs.css';
-
+import { NavLink } from 'react-router-dom';
 const PartnerWithUs = () => {
   return (
     <div className="partner-section">
@@ -40,7 +40,7 @@ const PartnerWithUs = () => {
             Earn from every successful partnership.
           </p>
         </div>
-        <button className="message-btn">Fill Form</button>
+        <NavLink to="/contact-us" className="message-btn">Fill Form</NavLink>
       </div>
     </div>
   );

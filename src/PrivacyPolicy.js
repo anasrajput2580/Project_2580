@@ -5,7 +5,6 @@ const PrivacyPolicy = () => {
   return (
     <div className="Bg-control-privacy">
     <div className="privacy-policy-container">
-     
     <p className="privacy-paragraph">
       Treasure Hint ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains how we ​collect, use, disclose, and safeguard your information when you visit our website, use our services, or participate ​in the Treasure Hint Affiliate Program. Please read this policy carefully to understand our views and practices ​regarding your personal data and how we will treat it.
     </p>

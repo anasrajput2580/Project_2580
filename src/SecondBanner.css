@@ -1,215 +1,214 @@
 /* General Styles */
 .banner1 {
 
-    background-position: center;
-    color: #ffffff;
-    position: relative;
-    background:linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%)
-  }
-  .banner1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    z-index: -1; /* Make sure the gradient is on top of the image */
-  }
-  .navbar1 {
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-  
-    /* padding: -51px; */
-   /* Semi-transparent black background */
-    z-index: 1;
-  }
-  
-  .banner-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit:none; /* Ensures the image covers the entire banner */
-    z-index: -1; /* Places the image behind other content */
-  }
-  /* Styling for the logo image */
-  .logo1 .home-button1 {
-    display:flex;
-    text-decoration: none;
+  background-position: center;
+  color: #ffffff;
+  position: relative;
+  background:linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 100%)
+}
+.banner1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  z-index: -1; /* Make sure the gradient is on top of the image */
+}
+.navbar1 {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
 
-  }
+  /* padding: -51px; */
+ /* Semi-transparent black background */
+  z-index: 1;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:none; /* Ensures the image covers the entire banner */
+  z-index: -1; /* Places the image behind other content */
+}
+/* Styling for the logo image */
+.logo1 .home-button1 {
+  display:flex;
+  text-decoration: none;
+
+}
+
+.logo-img1 {
+  width: 350px; /* Adjust the width according to the logo size */
+  height: 300;
+  background-color: transparent;
+  align-self: left;
+  margin-left: -90px;
+}
+
+.menu1 {
+  display: flex;
+  list-style: none;
+  padding-left: -200px;
+  /*This margin set the gap between home and menu*/
+  margin-left: -40px;
+}
+
+.menu1 li {
+  margin-right: 30px;
+}
+
+.menu1 li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+/* Active menu item styling */
+/* Default link style */
+.menu1 li a {
+  color: #ffffff;  /* Default color */
+  text-decoration: none; /* Ensure no underline */
+}
+
+/* Style for the active menu item */
+.menu1 li a.active {
+  color: #f8cf40;  /* Yellow color for the active menu item */
+}
+
+
+.banner-header1 {
+  text-align: center;
+  /*padding: 100px 0; /* Adjust to center the content */
+  padding-top: -10px;
+  padding-bottom: 20px;
+  margin-top: -50px;
   
-  .logo-img1 {
-    width: 350px; /* Adjust the width according to the logo size */
-    height: 300;
-    background-color: transparent;
-    align-self: left;
-    margin-left: -90px;
-  }
-  
-  .menu1 {
-    display: flex;
-    list-style: none;
-    padding-left: -200px;
-    /*This margin set the gap between home and menu*/
-    margin-left: -40px;
-  }
-  
-  .menu1 li {
-    margin-right: 30px;
-  }
-  
-  .menu1 li a {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-  
-  }
-  /* Active menu item styling */
-  /* Default link style */
-  .menu1 li a {
-    color: #ffffff;  /* Default color */
-    text-decoration: none; /* Ensure no underline */
-  }
-  
-  /* Style for the active menu item */
-  .menu1 li a.active {
-    color: #f8cf40;  /* Yellow color for the active menu item */
-  }
- 
-  
-  .banner-header1 {
-    text-align: center;
-    /*padding: 100px 0; /* Adjust to center the content */
-    padding-top: -10px;
-    padding-bottom: 20px;
-    margin-top: -50px;
-    
-  }
-  .banner-title1 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 50px;
-    color: #f8cf40;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .banner-subtitle1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    color: #ffffff;
-    margin-top: 10px;
-    z-index: 1;
-    text-align: left;
-    padding-left: 200px;
-    margin-top: -30px;
-  }
-  .contact-button1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: #ffffff;
-   width: 140px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border-radius: 20px;
-    border-color: #f8cf40;
-    text-decoration: none;
-    border: 3px solid #f8cf40;
-    margin-left: 10px;
-    text-align: center;
-  }
-  /* Responsive Styles */
+}
+.banner-title1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 50px;
+  color: #f8cf40;
+  font-weight: bold;
+  text-align: center;
+}
+
+.banner-subtitle1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 10px;
+  z-index: 1;
+  text-align: left;
+  padding-left: 200px;
+  margin-top: -30px;
+}
+.contact-button1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+ width: 140px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border-color: #f8cf40;
+  text-decoration: none;
+  border: 3px solid #f8cf40;
+  margin-left: 10px;
+  text-align: center;
+}
+/* Responsive Styles */
 @media (max-width: 1024px) {
-    .logo-img1 {
-        width: 200px;
-        margin-left: 0;
-    }
+  .logo-img1 {
+      width: 200px;
+  }
 
-    .menu1 li a {
-        font-size: 18px;
-    }
+  .menu1 li a {
+      font-size: 18px;
+  }
 
-    .banner-title1 {
-        font-size: 2.2em;
-    }
+  .banner-title1 {
+      font-size: 2.2em;
+  }
 
-    .banner-subtitle1 {
-        font-size: 1.1em;
-        padding-left: 10px;
-    }
+  .banner-subtitle1 {
+      font-size: 1.1em;
+      padding-left: 10px;
+  }
 
-    .contact-button1 {
-        font-size: 0.9em;
-        padding: 8px 16px;
-    }
+  .contact-button1 {
+      font-size: 0.9em;
+      padding: 8px 16px;
+  }
 }
 
 @media (max-width: 768px) {
-    .navbar1 {
-        justify-content: center; /* Center navbar items on smaller screens */
-    }
+  .navbar1 {
+      flex-direction: column;
+      justify-content: center;
+  }
 
-    .logo-img1 {
-        width: 180px;
-        margin-left: 0;
-    }
+  .logo-img1 {
+      width: 180px;
+  }
 
-    .menu1 {
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: center;
-    }
+  .menu1 {
+      flex-direction: column;
+      align-items: center;
+  }
 
-    .menu1 li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  .menu1 li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
 
-    .banner-title1 {
-        font-size: 1.8em;
-    }
+  .banner-title1 {
+      font-size: 1.8em;
+  }
 
-    .banner-subtitle1 {
-        font-size: 1em;
-        text-align: center;
-        padding-left: 0;
-        margin-top: 0;
-    }
+  .banner-subtitle1 {
+      font-size: 1em;
+      text-align: center;
+      padding-left: 0;
+      margin-top: 0;
+  }
 
-    .contact-button1 {
-        width: 100%;
-        max-width: 200px;
-        padding: 8px;
-        font-size: 0.8em;
-        margin: 10px auto;
-    }
+  .contact-button1 {
+      width: 100%;
+      max-width: 200px;
+      padding: 8px;
+      font-size: 0.8em;
+      margin: 10px auto;
+      margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 480px) {
-    .banner1 {
-        padding: 20px 10px;
-    }
+  .logo-img1 {
+      width: 150px;
+  }
 
-    .logo-img1 {
-        width: 150px;
-    }
+  .banner-title1 {
+      font-size: 1.5em;
+      
+  }
 
-    .banner-title1 {
-        font-size: 1.5em;
-    }
+  .banner-subtitle1 {
 
-    .banner-subtitle1 {
-        font-size: 0.9em;
-        text-align: center;
-    }
+      font-size: 0.9em;
+      text-align: center;
+  }
 
-    .contact-button1 {
-        font-size: 0.6em;
-        padding: 6px 12px;
-        width:50%;
-    }
+  .contact-button1 {
+      font-size: 0.6em;
+      padding: 6px 12px;
+      width: 50%;
+      margin-bottom: 100px;
+  }
 }
