@@ -28,17 +28,21 @@
   margin-top: -10px;
 
 }
-
+.footer-column {
+  gap: 40px;
+}
 .footer-column h4 {
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 8px;
   color: #000000;
+  padding-left: 30px;
 }
 
 .footer-column p {
   font-size: 12px;
   color: #000000;
+  padding-left: 30px;
 }
 .footer-column a {
   color: #000000;
