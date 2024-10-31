@@ -31,7 +31,6 @@ const ContactUs = () => {
       </form>
    
     </div>
-
     {/* Contact Info Section */}
     <div className="contact-info-section">
     <p><i className="fas fa-clock"></i> <strong>Monday - Friday</strong><br />&emsp;8:00 a.m. - 8:00 p.m. EST</p>

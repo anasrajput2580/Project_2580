@@ -77,12 +77,12 @@
     }
   
     .subscribe-box {
-      width: 100%;
+      width: 90%;
       margin-top: 20px;
     }
   
     .email-input {
-      width: 60%;
+      width: 50%;
     }
   }
   
