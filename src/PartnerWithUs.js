@@ -26,6 +26,7 @@ const PartnerWithUs = () => {
           <p className="step-description">
             Share your links to partner with new customers.
           </p>
+          <NavLink to="/contact-us" className="message-btn">Fill Form</NavLink>
         </div>
 
         {/* Arrow GIF */}
@@ -39,8 +40,9 @@ const PartnerWithUs = () => {
           <p className="step-description">
             Earn from every successful partnership.
           </p>
+  
         </div>
-        <NavLink to="/contact-us" className="message-btn">Fill Form</NavLink>
+        
       </div>
     </div>
   );
