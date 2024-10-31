@@ -1,83 +1,130 @@
-.inclusive-area{
-    background-color: #000000;
+.inclusive-area {
+  background-color: #000000;
 }
-.IP-section {
-background-color: #f2efeb;
 
+.IP-section {
+  background-color: #f2efeb;
 }
-.heading-text{
-    font-size: 25px;
-    font-style: 'Montserrat', sans-serif;
-    text-align: center;
-    margin:0%;
-    font-weight: bold;
-    padding-top: 30px;
+
+.heading-text {
+  font-size: 25px;
+  font-style: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  padding-top: 30px;
 }
-.paragraph-text{
-    font-size: 25px;
-    font-style: 'Montserrat', sans-serif;
-    text-align: center;
-   padding-bottom: 30px;
+
+.paragraph-text {
+  font-size: 25px;
+  font-style: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
 }
+
 .main-phase-section2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2122;
+  padding: 40px 0;
+}
+
+.main-content2 {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.main-image2 {
+  width: 50%;
+  object-fit: cover;
+  background-color: #ffd700;
+}
+
+.main-text-content2 {
+  padding: 20px;
+  color: #ffffff;
+  width: 50%;
+}
+
+.main-heading2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.main-paragraph2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  opacity: 0.8;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.main-statement-text2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+.main-statement-text2::before {
+  content: '';
+  width: 30%;
+  height: 5px;
+  background-color: #f8cf40;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .main-content2 {
+    flex-direction: column; /* Stack image and text vertically */
     align-items: center;
-    background-color: #1f2122; /* Dark background for the section */
-    padding: 40px 0; /* Add padding to the section */
+  }
+  
+  .main-image2,
+  .main-text-content2 {
+    width: 100%; /* Make image and text full-width on smaller screens */
+    padding: 10px;
+  }
+  
+  .main-heading2,
+  .main-paragraph2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-text, .paragraph-text, .main-heading2, .main-paragraph2, .main-statement-text2 {
+    font-size: 20px; /* Slightly reduce font size on smaller devices */
+  }
+
+  .main-statement-text2::before {
+    width: 50%; /* Adjust line width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-text, .paragraph-text, .main-heading2, .main-paragraph2, .main-statement-text2 {
+    font-size: 18px; /* Further reduce font size on very small devices */
   }
   
   .main-content2 {
-    display: flex;
-    max-width: 1200px; /* Limit the width for large screens */
-    width: 100%;
-    align-items: center;
+    padding: 20px 10px;
   }
   
-  .main-image2 {
-    width: 50%; /* Image takes half the space */
-    object-fit: cover;
-    background-color: #ffd700; /* Yellow background for the image section */
+  .main-phase-section2 {
+    padding: 20px 0; /* Reduce padding for small screens */
   }
-  
-  .main-text-content2 {
-    padding: 20px;
-    color: #ffffff;
-    width: 50%; /* Text content takes half the space */
-  }
-  
-  .main-heading2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 20px;
-  }
-  
-  .main-paragraph2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    opacity: 0.8; /* Apply transparency effect */
-    padding-left: 40px;
-    padding-right: 20px;
-  }
-  .main-statement-text2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    color: #000000;
-    position: relative;
-    text-align: center; /* Ensures the text itself is centered */
-  }
-  
-  .main-statement-text2::before {
-    content: '';
-    width: 30%;
-    height: 5px;
-    background-color: #f8cf40;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the line horizontally */
-  }
-  
+}
