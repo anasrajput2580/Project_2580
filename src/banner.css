@@ -1,7 +1,7 @@
 /* General Styles */
 .banner {
   background-position: center;
-  padding: 20px;
+  padding: 2vw; /* Responsive padding */
   color: #ffffff;
   position: relative;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
@@ -37,115 +37,122 @@
 }
 
 .logo-img {
-  width: 350px;
+  width: 28vw; /* Responsive logo width */
   height: auto;
   background-color: transparent;
-  margin-left: -90px;
+  margin-left: -5vw;
 }
 
 .menu {
   display: flex;
   list-style: none;
-  padding-left: -200px;
-  margin-left: -40px;
+  padding-left: 0;
+  margin-left: -2vw;
 }
 
 .menu li {
-  margin-right: 40px;
+  margin-right: 3vw;
 }
 
 .menu li a {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 2vw; /* Responsive font size */
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 }
+
 /* Style for the active menu item */
 .menu li a.active {
-  color: #f8cf40;  /* Yellow color for the active menu item */
+  color: #f8cf40; /* Yellow color for the active menu item */
 }
 .menu li a:hover {
-color: #f8cf40;
+  color: #f8cf40;
 }
+
 .contact-button {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1.2vw; /* Responsive font size */
   color: #ffffff;
-  width: 140px;
-  padding: 10px 20px;
+  width: 8vw;
+  padding: 1vw 1.5vw;
   text-transform: uppercase;
-  border-radius: 20px;
+  border-radius: 2vw;
   border: 3px solid #f8cf40;
-  margin-right: 25px;
+  margin-right: 1.5vw;
   text-align: center;
   text-decoration: none;
 }
 
 .banner-header {
   text-align: left;
-  padding: 100px 0;
+  padding: 8vw 0; /* Responsive padding */
 }
 
 .banner-title {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 50px;
+  font-size: 4vw; /* Responsive font size */
   color: #f8cf40;
   font-weight: bold;
 }
 
 .banner-subtitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 1.5vw; /* Responsive font size */
   color: #ffffff;
-  margin-top: 10px;
+  margin-top: 1vw;
   z-index: 1;
 }
 
 /* Tablet styles */
-.menu-tablet {
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 0;
-}
+@media (max-width: 1024px) {
+  .menu-tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
 
-.title-tablet {
-  font-size: 45px;
-}
+  .title-tablet {
+    font-size: 6vw; /* Responsive font size */
+  }
 
-.subtitle-tablet {
-  font-size: 22px;
+  .subtitle-tablet {
+    font-size: 3vw; /* Responsive font size */
+  }
 }
 
 /* Mobile styles */
-.navbar-mobile {
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
-}
+@media (max-width: 767px) {
+  .navbar-mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vw;
+  }
 
-.menu-mobile {
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .menu-mobile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.menu-mobile li {
-  margin-bottom: 15px;
-}
+  .menu-mobile li {
+    margin-bottom: 3vw;
+  }
 
-.logo-img-mobile {
-  width: 60px;
-}
+  .logo-img {
+    width: 25vw; /* Adjusted for mobile */
+    margin-left: 0;
+  }
 
-.contact-button-mobile {
-  font-size: 14px;
-  padding: 5px 10px;
-}
+  .contact-button {
+    font-size: 3vw; /* Responsive font size */
+    padding: 1.5vw 2.5vw;
+  }
 
-.title-mobile {
-  font-size: 32px;
-}
+  .title-mobile {
+    font-size: 8vw; /* Responsive font size */
+  }
 
-.subtitle-mobile {
-  font-size: 16px;
+  .subtitle-mobile {
+    font-size: 4vw; /* Responsive font size */
+  }
 }
