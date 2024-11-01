@@ -10,7 +10,7 @@ const StayUpdated = () => {
     // Trigger email via mailto
     window.location.href = 'mailto:HR-HQ7@TreasureHint.com';
     // Redirect to the Thank You page after clicking Subscribe
-    navigate('/thank-you');
+    navigate('/thank-you-subs');
   };
 
   return (

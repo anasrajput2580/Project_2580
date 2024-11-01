@@ -32,6 +32,7 @@ import ContactUs from './ContactUs';
 import LegalNotice from './LegalNotice';
 import PrivacyPolicy from './PrivacyPolicy';
 import SecondBanner from './SecondBanner';
+import TYSubscriber from './TYSubscriber';
 function HomePage() {
   return (
     <>
@@ -170,6 +171,31 @@ function PrivacyPolicyPage() {
     </>
         );
 }
+function TySubscribePage() {
+  return (
+    <>
+    <TYSubscriber
+    title="Thank You for Subscribing!"
+    line1="Your submission was successful. "
+    line2="You will soon start receiving our newsletters with curated content, important updates, and special promotions."
+    line3="We appreciate your trust and look forward to connecting with you."
+    />
+
+    </>
+        );
+}
+function TyQueriesPage() {
+  return (
+    <>
+    <TYSubscriber
+    title="Thank You for Reaching Out!"
+    line1="We have received your message."
+    line2="We’ll reach you out immediately."
+    />
+
+    </>
+        );
+}
 function App() {
   return (
     <Router>
@@ -182,6 +208,8 @@ function App() {
         <Route path="/contact-us" element={<ContactUsPage/>}/>
         <Route path="/legal-notice" element={<LegalNoticePage/>}/>
         <Route path="/privacy-policy" element={<PrivacyPolicyPage/>}/>
+        <Route path="/thank-you-subs" element={<TySubscribePage/>}/>
+        <Route path="/thank-you-queries" element={<TyQueriesPage/>}/>
       </Routes>
     </Router>
   );

@@ -4,13 +4,19 @@ import { useNavigate } from 'react-router-dom';
 
 const ContactUs = () => {
   const navigate = useNavigate();
-
+  const handleSubs = (e) => {
+    e.preventDefault();
+    // Trigger email via mailto
+    window.location.href = 'mailto:HR-HQ7@TreasureHint.com';
+    // Redirect to the Thank You page after clicking Subscribe
+    navigate('/thank-you-subs');
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     // Trigger email via mailto
     window.location.href = 'mailto:HR-HQ7@TreasureHint.com';
     // Redirect to the Thank You page after clicking Subscribe
-    navigate('/thank-you');
+    navigate('/thank-you-queries');
   };
   return (
     <div>
@@ -23,7 +29,7 @@ const ContactUs = () => {
       <h2>Our Newsletter</h2>
       <p>Stay ahead with tips to earn more on the side.</p>
       
-      <form className="newsletter-form" onSubmit={handleSubmit}>
+      <form className="newsletter-form" onSubmit={handleSubs}>
         <div className="newsletter-bg">
         <input type="email" placeholder="Your e-mail address" required />  
         </div> 
