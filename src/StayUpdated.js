@@ -4,15 +4,32 @@ import './StayUpdated.css';
 
 const StayUpdated = () => {
   const navigate = useNavigate();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Trigger email via mailto
-    window.location.href = 'mailto:HR-HQ7@TreasureHint.com';
-    // Redirect to the Thank You page after clicking Subscribe
-    navigate('/thank-you-subs');
+    const formData = new FormData(event.target);
+    formData.append("access_key", "b5abfd5d-25ff-4873-9f66-f528994278df");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        window.alert("Subscribed Successfully");
+        event.target.reset();
+        navigate('/thank-you-subs');
+      } else {
+        console.log("Error", data);
+        window.alert(data.message || "An error occurred. Please try again.");
+      }
+    } catch (error) {
+      window.alert("Network error. Please check your connection and try again.");
+    }
   };
-
   return (
     <div className="stay-updated-section">
       <div className="content">
@@ -20,12 +37,18 @@ const StayUpdated = () => {
         <p>Stay ahead with tips to earn more on the side.</p>
       </div>
       <form className="subscribe-box" onSubmit={handleSubmit}>
-        <input
+      <input
           type="email"
+          name="email" // Add name attribute for Web3Forms
           placeholder="Your e-mail address"
           className="email-input"
           required
         />
+         {/* Hidden fields for customization */}
+         <input type="hidden" name="subject" value="New Subscription from StayUpdated" />
+        <input type="hidden" name="from_name" value="Treasure Hint" />
+        <input type="hidden" name="message" value="A new user has been subscribed for updates." />
+
         <button type="submit" className="subscribe-button">SUBSCRIBE</button>
       </form>
     </div>

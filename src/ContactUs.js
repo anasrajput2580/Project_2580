@@ -4,19 +4,57 @@ import { useNavigate } from 'react-router-dom';
 
 const ContactUs = () => {
   const navigate = useNavigate();
-  const handleSubs = (e) => {
-    e.preventDefault();
-    // Trigger email via mailto
-    window.location.href = 'mailto:HR-HQ7@TreasureHint.com';
-    // Redirect to the Thank You page after clicking Subscribe
-    navigate('/thank-you-subs');
+  const handleSubs = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    formData.append("access_key", "b5abfd5d-25ff-4873-9f66-f528994278df");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        window.alert("Subscribed Successfully");
+        event.target.reset();
+        navigate('/thank-you-subs');
+      } else {
+        console.log("Error", data);
+        window.alert(data.message || "An error occurred. Please try again.");
+      }
+    } catch (error) {
+      window.alert("Network error. Please check your connection and try again.");
+    }
   };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Trigger email via mailto
-    window.location.href = 'mailto:HR-HQ7@TreasureHint.com';
-    // Redirect to the Thank You page after clicking Subscribe
-    navigate('/thank-you-queries');
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    formData.append("access_key", "b5abfd5d-25ff-4873-9f66-f528994278df");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        window.alert("Subscribed Successfully");
+        event.target.reset();
+        navigate('/thank-you-queries');
+      } else {
+        console.log("Error", data);
+        window.alert(data.message || "An error occurred. Please try again.");
+      }
+    } catch (error) {
+      window.alert("Network error. Please check your connection and try again.");
+    }  
   };
   return (
     <div>
@@ -31,7 +69,11 @@ const ContactUs = () => {
       
       <form className="newsletter-form" onSubmit={handleSubs}>
         <div className="newsletter-bg">
-        <input type="email" placeholder="Your e-mail address" required />  
+        <input type="email" name="email" placeholder="Your e-mail address" required />  
+        {/* Hidden fields for customization */}
+        <input type="hidden" name="subject" value="New Subscription from Newsletter" />
+        <input type="hidden" name="from_name" value="Treasure Hint" />
+        <input type="hidden" name="message" value="A new user has been subscribed for Newsletter." />
         </div> 
         <button  type="submit" >SUBSCRIBE</button>
       </form>
@@ -67,7 +109,7 @@ const ContactUs = () => {
       <h2>Fill out the form and we'll get back to you.</h2>
       <form onSubmit={handleSubmit}>
         <label>WHAT ARE YOU HERE FOR? </label>
-        <select>
+        <select name="Select">
           <option>Please Select</option>
           <option>Partnership</option>
           <option>Request Meeting</option>
@@ -75,17 +117,21 @@ const ContactUs = () => {
           <option>Other (Please Specify)</option>
         </select>
         <label>WHAT CAN WE HELP YOU WITH</label>
-        <textarea rows="3"></textarea>
+        <textarea name="Description" rows="3"></textarea>
         <div className="form-grid">
-          <input type="text" placeholder="NAME" required />
-          <input type="email" placeholder="EMAIL" required />
-          <input type="text" placeholder="COMPANY" required />
-          <input type="text" placeholder="PHONE NUMBER" required />
-          <input type="text" placeholder="DEPARTMENT" required />
-          <input type="text" placeholder="POSITION" required />
+          <input type="text" name="Name" placeholder="NAME" required />
+          <input type="email" name="Email" placeholder="EMAIL" required />
+          <input type="text" name="Company" placeholder="COMPANY" required />
+          <input type="text" name="Phone Number" placeholder="PHONE NUMBER" required />
+          <input type="text" name="Department" placeholder="DEPARTMENT" required />
+          <input type="text" name="Position" placeholder="POSITION" required />
+             {/* Hidden fields for customization */}
+        <input type="hidden" name="subject" value="New Query submitted" />
+        <input type="hidden" name="from_name" value="Treasure Hint" />
+        <input type="hidden" name="message" value="A new query has been generated for review." />
         </div>
         <div className="checkbox">
-          <input type="checkbox" id="chk1" name="chk1" value="Box" required />
+          <input type="checkbox" id="chk1" name="checkbox" value="Checked" required />
           <label for="chk1">By checking this box, you agree to receive text messages and emails at the contact information ​provided. Standard messages and data rates may apply. By clicking SUBMIT NOW, you agree to our ​Legal Notice and Privacy Policy.</label>
         </div>
         <button type="submit" className="submit-btn">SUBMIT</button>

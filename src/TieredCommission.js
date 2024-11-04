@@ -26,8 +26,8 @@ const TieredCommission = () => {
         <div className="text-block2">
           <h2 className="block-title2">Luxury House <br/>Exclusive Rewards for <br/>​Extraordinary Living</h2>
           <p className="block-description2">
-          These rewards go beyond the ordinary​—they’re crafted to elevate your ​lifestyle, giving you the prestige of ​luxury with benefits that only Treasure ​Hint can offer.
-          </p>
+          This isn’t just about owning a home—​it’s about living the extraordinary life ​you deserve, with benefits reserved for ​those who reach for more.
+            </p>
         </div>
            {/* Image */}
            <div className="image-container2">
