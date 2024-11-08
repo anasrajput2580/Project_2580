@@ -34,13 +34,12 @@
     margin-top: 10px;
   }
   .newsletter-bg {
-    background-color: #737373;
+    /* background-color: #737373; */
     align-content: center;
     width: 320px;
-    padding-top: 15px;
-    padding-bottom: 14px;
-    padding-left: 15px;
-    padding-right: -2px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+    margin-left: 10px;
     border-radius: 12px;
     border-color: none;
   }
