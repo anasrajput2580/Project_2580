@@ -35,6 +35,7 @@
   }
   .newsletter-bg {
     background-color: #737373;
+    align-content: center;
     width: 320px;
     padding-top: 15px;
     padding-bottom: 14px;
