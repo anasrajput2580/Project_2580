@@ -36,14 +36,16 @@
   gap: 20px;
   flex-wrap: wrap;
 }
-
+.card-handle{
+  width: 30%;
+}
 /* Individual card styling */
 .card {
   background-color: #1f2122;
   border: 2px solid #f8cf40;
   padding: 25px;
-  width: 25%;
-  min-width: 160px;
+  width: 30%;
+  min-width: 320px;
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -74,7 +76,9 @@
   font-size: 18px;
   background-color: #ebf1ec;
   padding: 25px;
-  width: 25%;
+  width: 20%;
+  text-align: left;
+  min-width: 320px;
 }
 
 .card-list li {
@@ -111,17 +115,21 @@
     flex-direction: column;
     align-items: center;
   }
-
+ .card-handle {
+  align-content: center;
+  align-items: center;
+  margin-right: 100px;
+ }
   .card {
-    width: 80%;
+    min-width: 100px;
   }
 
   .celebrate-title {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .card-title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .card-subtitle {
@@ -129,7 +137,7 @@
   }
 
   .card-list {
-    font-size: 16px;
-    width: 80%;
+    font-size: 12px;
+    min-width: 100px;
   }
 }

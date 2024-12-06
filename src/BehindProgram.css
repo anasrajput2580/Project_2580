@@ -77,3 +77,63 @@
   height: auto;
   max-width: 100%; /* Ensure it scales properly */
 }
+/* Tablet Screens */
+@media (max-width: 1024px) {
+ /* Adding the yellow line above the title */
+.program-title::before {
+  content: '  ';
+  width: 420px; /* Adjusted to match width in screenshot */
+  height: 5px;
+  background-color: #f8cf40;
+  position: relative;
+  top: -20px;
+  left: 50px; /* Adjusted to align properly */
+}
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .program-title {
+    font-size: 32px; /* Reduce font size for mobile */
+  }
+
+  .program-subtitle {
+    font-size: 28px; /* Adjust subtitle font size */
+  }
+
+  .program-quote {
+    font-size: 16px; /* Smaller font for mobile readability */
+  }
+
+  .program-author {
+    font-size: 16px; /* Adjust author text size */
+  }
+
+  .program-image img {
+    width: 100%; /* Make the image full-width */
+  }
+}
+
+/* Very Small Mobile Screens */
+@media (max-width: 480px) {
+  .program-title {
+    font-size: 28px; /* Further reduce font size */
+  }
+
+  .program-subtitle {
+    font-size: 24px;
+  }
+
+  .program-quote {
+    font-size: 14px;
+  }
+
+  .program-author {
+    font-size: 14px;
+  }
+
+  .program-title::before {
+    width: 60%; /* Adjust yellow line width */
+    left: 20%; /* Center-align the line */
+  }
+}
