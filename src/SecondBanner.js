@@ -24,7 +24,7 @@ const SecondBanner = ({ imgSrc, title, subtitle }) => {
           <li><NavLink to="/membership" activeClassName="active-link">MEMBERSHIP</NavLink></li>
           <li><NavLink to="/about" activeClassName="active-link">ABOUT US</NavLink></li>
         </ul>
-        <NavLink to="/contact-us" className="contact-button1">CONTACT US</NavLink>
+       
       </nav>
 
       {/* Image Background */}

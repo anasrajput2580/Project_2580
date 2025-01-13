@@ -1,16 +1,15 @@
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 import './CelebrateSuccess.css';
 
 const CelebrateSuccess = () => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1024 });
+
 
   return (
     <div className="celebrate-section">
       <h1 className="celebrate-title">Celebrate Your Success</h1>
       <div className="reward-cards">
-        <div className="card-handle">  <div className="card">
+        <div className="card-handle">  
+          <div className="card">
           <h2 className="card-title">Bonuses</h2>
           <p className="card-subtitle">Stage 1 Reward</p>
         </div>
