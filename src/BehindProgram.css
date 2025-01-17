@@ -109,13 +109,16 @@
     font-size: 16px; /* Adjust author text size */
   }
 
-  .program-image img {
-    width: 100%; /* Make the image full-width */
+  .program-image {
+    width: 70%; /* Make the image full-width */
   }
 }
 
 /* Very Small Mobile Screens */
 @media (max-width: 480px) {
+  .program-image {
+    width: 70%;
+  }
   .program-title {
     font-size: 28px; /* Further reduce font size */
   }

@@ -25,14 +25,7 @@ const ValuesSection = () => {
           </div>
           <img className='card2-image' src="/img/About_Us_Page/Teamwork.png" alt="Teamwork" />
         </div>
-         {/* Card 3 */}
-         <div className="value-card">
-          <img  className ='card1-image' src="/img/About_Us_Page/Innovation.png" alt="Innovation" />
-          <div className="value-card-text">
-            <h3>Driven by Innovation</h3>
-            <p>We’re always finding smarter ways to help you ​earn. Whether it’s new tools or fresh ideas, we ​make sure you’re set for success.</p>
-          </div>
-        </div>
+        
         {/* Card 4 */}
         <div className="value-card">
           
@@ -41,6 +34,14 @@ const ValuesSection = () => {
             <p>We’re here for you at every step of your ​journey, from earning that first dollar to ​reaching new goals.</p>
           </div>
           <img className='card2-image' src="/img/About_Us_Page/Support.png" alt="Support" />
+        </div>
+         {/* Card 3 */}
+         <div className="value-card">
+          <img  className ='card1-image' src="/img/About_Us_Page/Innovation.png" alt="Innovation" />
+          <div className="value-card-text">
+            <h3>Driven by Innovation</h3>
+            <p>We’re always finding smarter ways to help you ​earn. Whether it’s new tools or fresh ideas, we ​make sure you’re set for success.</p>
+          </div>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="footer-bottom-column">  <p><a href="https://drive.google.com/file/d/10Wu9u58Yv6i0Kryy0XM2ibSQ0unwnhFo/view">Terms and Conditions</a></p></div>
         <div className="footer-bottom-column">  <p><a href="/legal-notice">Legal Notice</a></p></div>
         <div className="footer-bottom-column">  <p><a href="/privacy-policy">Privacy Policy</a></p></div>
-        <div className="footer-bottom-column">  <p>Copyright 2024<br/>Treasure Hint</p> </div>       
+        <div className="footer-bottom-column">  <p>Copyright 2024 Treasure Hint</p> </div>       
         </div> 
         </div>
         <div className="vertical-divider"></div>

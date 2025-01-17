@@ -1,52 +1,53 @@
 /* General layout styling */
 .treasure-hint-section {
   background-color: #1f2122;
-  padding: 40px;
+  padding: 4vw; /* Adjusted for responsiveness */
   text-align: center;
   color: #fff;
 }
 
 .header1 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 50px;
+  font-size: 5vw; /* Adjusted for responsiveness */
   color: #f8cf40;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 2vw; /* Adjusted for responsiveness */
 }
 
 .paragraph1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 2.5vw; /* Adjusted for responsiveness */
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 40px;
+  margin-bottom: 4vw; /* Adjusted for responsiveness */
 }
 
 /* Main container for the role cards */
 .roles-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 7vw; /* Adjusted for responsiveness */
   justify-items: center;
 }
 
 /* Responsive container classes */
 .roles-container-tablet {
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 2vw; /* Adjusted for responsiveness */
 }
 
 .roles-container-mobile {
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 2vw; /* Adjusted for responsiveness */
 }
 
 /* Individual role card */
 .role-card {
   background-color: #2c2f33;
-  border: 2px solid #f8cf40;
-  padding: 20px;
-  width: 100%; /* Make the card width 100% for better responsiveness */
-  max-width: 300px; /* Set a max-width for large screens */
+  border: 0.2vw solid #f8cf40; /* Adjusted for responsiveness */
+  padding: 2.5vw; /* Adjusted for responsiveness */
+  width: 100%; /* Keep 100% for better responsiveness */
+  max-width: 50vw; /* Adjusted for responsiveness */
+  max-height: 40vw; /* Adjusted for responsiveness */
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -58,77 +59,77 @@
 .role-image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 1.5vw; /* Adjusted for responsiveness */
 }
 
 /* Ensure the images are responsive */
 .role-image {
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 26vw; /* Adjusted for responsiveness */
   object-fit: cover;
-  border: 2px solid #f8cf40;
+  border: 0.2vw solid #f8cf40; /* Adjusted for responsiveness */
 }
 
 /* Title and description styling */
 .role-title {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 24px;
+  font-size: 3.4vw; /* Adjusted for responsiveness */
   color: #f8cf40;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 1vw; /* Adjusted for responsiveness */
 }
 
 .role-description {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 2.6vw; /* Adjusted for responsiveness */
   color: #ffffff;
-  margin-top: 5px;
+  margin-top: 0.5vw; /* Adjusted for responsiveness */
 }
 
 /* Responsive adjustments */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .header1 {
-    font-size: 50px;
+    font-size: 5vw;
   }
 
   .paragraph1 {
-    font-size: 25px;
+    font-size: 2.5vw;
   }
 
   .role-card {
-    max-width: 300px;
+    max-width: 30vw;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .header1 {
-    font-size: 40px;
+    font-size: 4vw;
   }
 
   .paragraph1 {
-    font-size: 20px;
+    font-size: 2vw;
   }
 
   .role-card {
-    max-width: 250px;
+    max-width: 25vw;
   }
 }
 
 @media (max-width: 767px) {
   .header1 {
-    font-size: 35px;
+    font-size: 3.5vw;
   }
 
   .paragraph1 {
-    font-size: 18px;
+    font-size: 1.8vw;
   }
 
   .role-image {
-    max-height: 150px;
+    max-height: 25vw;
   }
 
   .role-card {
-    max-width: 90%;
+    max-width: 60%;
   }
 }

@@ -107,6 +107,9 @@
   .story-section-subtitle {
       font-size: 20px;
   }
+  .text-container2 p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -132,4 +135,5 @@
       line-height: 1.5;
       padding: 0;
   }
+
 }

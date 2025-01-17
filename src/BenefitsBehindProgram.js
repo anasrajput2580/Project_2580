@@ -5,7 +5,7 @@ const BenefitsBehindProgram = () => {
   return (
     <div className="program-section">
     
-      <div className="program-content">
+      <div className="bprogram-content">
         <h2 className="program-title">Behind the Program</h2>
         <h3 className="program-subtitle">Insights From Those Who Know</h3>
         <p className="program-quote">

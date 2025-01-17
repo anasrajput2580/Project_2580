@@ -71,7 +71,7 @@
 }
 
 .fee-category {
-  background-color: #f8cf40;
+  background-color: #ffde59 ;
   font-size: 32px;
   font-weight: bold;
   height: fit-content;
@@ -127,10 +127,10 @@ tbody td {
 tbody td:first-child {
   text-transform: uppercase;
   font-weight: bold;
-  background-color:  #ffffff;;
+  background-color:  #ffffff;
 }
-.empty-header {
-  background-color: #f8cf40;
+.td:empty-header {
+  background-color:   #ffde59 ;
   border-right: 2px solid #000000;
 }
 /* Responsive table container */

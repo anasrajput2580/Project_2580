@@ -41,7 +41,9 @@
     width: 600px; /* Fixed width for subscribe box */
     flex-shrink: 0; /* Prevent subscribe box from shrinking */
   }
-  
+  .subscribe-box :placeholder{
+    color: #000000;
+  }
   .email-input {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 14px;

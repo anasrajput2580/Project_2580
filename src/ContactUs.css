@@ -51,7 +51,9 @@
     align-items: center;
     background-color: #d9e1e1;
   }
-  
+  input::placeholder {
+    color: #000000;
+  }
   .newsletter-form button {
     padding: 10px 20px;
     background-color: #f8cf40;

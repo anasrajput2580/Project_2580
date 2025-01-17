@@ -110,16 +110,22 @@
 @media (max-width: 768px) {
   .heading-text, .paragraph-text, .main-heading2, .main-paragraph2, .main-statement-text2 {
     font-size: 20px; /* Slightly reduce font size on smaller devices */
+    text-align: center;
   }
 
   .main-statement-text2::before {
     width: 50%; /* Adjust line width for smaller screens */
+  }
+  .main-image2 {
+    width: 60%;
+    background-color: #ffd700;
   }
 }
 
 @media (max-width: 480px) {
   .heading-text, .paragraph-text, .main-heading2, .main-paragraph2, .main-statement-text2 {
     font-size: 18px; /* Further reduce font size on very small devices */
+    text-align: center;
   }
   
   .main-content2 {
@@ -128,5 +134,9 @@
   
   .main-phase-section2 {
     padding: 20px 0; /* Reduce padding for small screens */
+  }
+  .main-image2 {
+    width: 40%;
+    background-color: #ffd700;
   }
 }
