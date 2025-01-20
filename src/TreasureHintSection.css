@@ -8,7 +8,7 @@
 
 .header1 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 5vw; /* Adjusted for responsiveness */
+  font-size: 3vw; /* Adjusted for responsiveness */
   color: #f8cf40;
   text-transform: uppercase;
   margin-bottom: 2vw; /* Adjusted for responsiveness */
@@ -16,7 +16,7 @@
 
 .paragraph1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5vw; /* Adjusted for responsiveness */
+  font-size: 2.4vw; /* Adjusted for responsiveness */
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 4vw; /* Adjusted for responsiveness */
 }
@@ -74,7 +74,7 @@
 /* Title and description styling */
 .role-title {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 3.4vw; /* Adjusted for responsiveness */
+  font-size: 2.2vw; /* Adjusted for responsiveness */
   color: #f8cf40;
   text-transform: uppercase;
   margin-bottom: 1vw; /* Adjusted for responsiveness */
@@ -82,7 +82,7 @@
 
 .role-description {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.6vw; /* Adjusted for responsiveness */
+  font-size: 1.7vw; /* Adjusted for responsiveness */
   color: #ffffff;
   margin-top: 0.5vw; /* Adjusted for responsiveness */
 }
