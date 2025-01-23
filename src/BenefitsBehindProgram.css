@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   padding: 20px;
 }
-
+ 
 /* Program content container */
 .bprogram-content {
   max-width: 600px;
@@ -72,7 +72,7 @@
 .bprogram-image {
   flex-shrink: 0;
   background-color: #f8cf40;
-  width: 800px;
+
 }
 
 .bprogram-image img {

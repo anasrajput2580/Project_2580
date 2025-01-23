@@ -2,8 +2,6 @@ import React from 'react';
 import './CelebrateSuccess.css';
 
 const CelebrateSuccess = () => {
-
-
   return (
     <div className="celebrate-section">
       <h1 className="celebrate-title">Celebrate Your Success</h1>
@@ -43,8 +41,6 @@ const CelebrateSuccess = () => {
         
         {/* Lists for each card */}
         
-      
-      
       </div>
     </div>
   );

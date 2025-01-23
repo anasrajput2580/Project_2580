@@ -18,22 +18,22 @@ const ValuesSection = () => {
         </div>
         {/* Card 2 */}
         <div className="value-card">
-          
+        <img className='card2-image' src="/img/About_Us_Page/Teamwork.png" alt="Teamwork" />
           <div className="value-card-text">
             <h3>Teamwork Drives Success</h3>
             <p>Together, we create opportunities for you to earn more. The stronger our partnership, the better your results.</p>
           </div>
-          <img className='card2-image' src="/img/About_Us_Page/Teamwork.png" alt="Teamwork" />
+        
         </div>
         
         {/* Card 4 */}
         <div className="value-card">
-          
+        <img className='card2-image' src="/img/About_Us_Page/Support.png" alt="Support" />
           <div className="value-card-text">
             <h3>Supporting Every Step</h3>
             <p>We’re here for you at every step of your ​journey, from earning that first dollar to ​reaching new goals.</p>
           </div>
-          <img className='card2-image' src="/img/About_Us_Page/Support.png" alt="Support" />
+         
         </div>
          {/* Card 3 */}
          <div className="value-card">

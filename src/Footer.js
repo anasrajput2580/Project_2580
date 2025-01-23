@@ -45,8 +45,6 @@ const Footer = () => {
            <i className="fab fa-linkedin"></i>
            </a>
            </div>
-        
-
         </div>
        
         </div>
