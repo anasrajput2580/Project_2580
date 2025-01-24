@@ -7,12 +7,12 @@
 
 .values-section h2 {
   color: #f8cf40;
-  font-size: 4vw;
+  font-size: 2.3vw;
   margin-bottom: 2vw;
 }
 
 .values-section p {
-  font-size: 2.5vw;
+  font-size: 1.6vw;
   margin-bottom: 5vw;
   opacity: 0.9;
 }
@@ -44,12 +44,12 @@
 
 .value-card h3 {
   color: #f8cf40;
-  font-size: 2.2vw;
+  font-size: 1.6vw;
   margin-bottom: 1.5vw;
 }
 
 .value-card p {
-  font-size: 2vw;
+  font-size: 1.2vw;
   opacity: 0.8;
   text-align: center;
 }
@@ -84,7 +84,7 @@
 /* Mobile View (Below 480px) */
 @media (max-width: 480px) {
   .values-section h2 {
-    font-size: 7vw;
+    font-size: 3vw;
   }
 
   .values-section p {
