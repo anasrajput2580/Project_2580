@@ -55,7 +55,10 @@
       flex-direction: column;
       text-align: center;
     }
-  
+    .text-container p
+    {
+      text-align: center;
+    }
     .text-container {
       flex: 100%;
 

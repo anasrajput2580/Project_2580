@@ -95,14 +95,17 @@
 @media (max-width: 768px) {
   .program-title {
     font-size: 32px; /* Reduce font size for mobile */
+    text-align: center;
   }
 
   .program-subtitle {
     font-size: 28px; /* Adjust subtitle font size */
+    text-align: center;
   }
 
   .program-quote {
     font-size: 16px; /* Smaller font for mobile readability */
+    text-align: center;
   }
 
   .program-author {
@@ -121,10 +124,12 @@
   }
   .program-title {
     font-size: 28px; /* Further reduce font size */
+    text-align: center;
   }
 
   .program-subtitle {
     font-size: 24px;
+    text-align: center;
   }
 
   .program-quote {

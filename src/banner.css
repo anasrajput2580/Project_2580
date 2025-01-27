@@ -163,7 +163,7 @@
   }
 
   .menu-mobile li {
-    margin-bottom: 5vw;
+    margin-bottom: 12vw;
   }
   .menu li a {
     font-size: 1.8vw;
@@ -171,6 +171,7 @@
   .logo-img {
     width: 20vw; /* Adjusted for mobile */
     margin-left: -3vw;
+    margin-bottom: 4vw;
   }
 
   .contact-button {
@@ -178,7 +179,7 @@
     padding: 1.5vw 2.5vw;
     width: 15%;
     margin-top: 0;
-    margin-bottom: 2vw;
+    margin-bottom: 10vw;
   }
 
   .title-mobile {
