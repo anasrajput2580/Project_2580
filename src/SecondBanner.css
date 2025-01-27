@@ -142,7 +142,7 @@
   }
 
   .logo-img1 {
-    width: 15vw;
+    width: 20vw;
   }
 
   .menu1 {
@@ -177,7 +177,7 @@
 
 @media (max-width: 480px) {
   .logo-img1 {
-    width: 10vw;
+    width: 18vw;
   }
 
   .banner-title1 {
