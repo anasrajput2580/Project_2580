@@ -102,8 +102,8 @@
   .vip-image-left,
   .vip-image-right,
   .vip-image-bottom {
-    width: 14vw; 
-    height: 8.4vw;
+    width: 25vw; 
+    height: 20vw;
   }
 
   .vip-heading {
@@ -116,12 +116,12 @@
 }
 
 @media (max-width: 480px) {
-  .vip-image-left,
+  /* .vip-image-left,
   .vip-image-right,
   .vip-image-bottom {
-    width: 12vw; /* Increased size */
-    height: 7.2vw; /* Adjusted to maintain aspect ratio */
-  }
+    width: 20vw;
+    height: 7.2vw; 
+  } */
 
   .vip-heading {
     font-size: 3.2vw;
